@@ -19,7 +19,7 @@ export const Index = () => {
             <Switch>
                 <Route path="./story" component={Story} />
                 <Route path="./theory" component={Theory} />
-                <Route path="./" component={App} />
+                <Route path="/" component={App} />
             </Switch>
             <footer>
                 &copy; Matej Kerekrety 2021
