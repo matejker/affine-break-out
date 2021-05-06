@@ -25,8 +25,6 @@ export const AffineBreakOut = (m) =>  {
         }
     }
 
-    // y = t * x + u
-
     for (let t = 0; t < n; t++) {
         for (let u = 0; u < n; u++) {
             for (let x = 0; x < n; x++) {

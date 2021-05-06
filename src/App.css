@@ -1,23 +1,122 @@
+.Search {
+  text-align: center;
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Search input {
+  margin: 0 .1vmin;
+}
+
+.Search label {
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: ;
-  min-height: 100vh;
+  margin: .1vmin auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(1px + 2vmin);
   color: #282c34;
 }
 
-.App-link {
+.App-text {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+  font-size: calc(1px + 1.8vmin);
+  color: #282c34;
+  text-indent: 2vmin;
+}
+.App-text p {
+  margin: .5vmin;
+}
+
+a {
   color: #61dafb;
+}
+
+menu {
+  text-align: center;
+}
+menu li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1vmin;
+}
+
+footer {
+  color: dimgray;
+  margin: 1vmin auto;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 1vmin;
+}
+
+/* http://jsfiddle.net/degaD/ */
+ol {
+  list-style: none;
+  counter-reset: my-badass-counter;
+  margin:0
+}
+
+ol li:nth-of-type(1){
+  font-weight: normal;
+}
+
+ol li {
+  list-style-position:outside;
+  margin-left: 0;
+  padding-left: 0;
+  counter-increment: my-badass-counter;
+}
+
+ol li:before {
+  content: "[" counter(my-badass-counter) "] ";
+  margin-left: -5vmin;
+  margin-right: .1vmin;
+}
+
+table {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 1vmin auto;
+}
+
+table.big {
+  width: 90%;
+  float: left;
+  text-align: center;
+  margin: 1vmin auto;
+}
+
+table th {
+  background: #f0f0f0;
+}
+
+img {
+  width: 60%;
+  margin: 1vmin auto;
+}
+
+
+pre {
+  text-indent: 0;
+  text-align: center;
+}
+
+code, pre {
+  font-size: 1.55vmin;
 }
