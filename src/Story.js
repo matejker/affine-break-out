@@ -11,9 +11,9 @@ function Story() {
                     I looked back and realised that by using <em>affine planes</em> it can be easily <em>solved</em>.
                 </p>
                 <p>
-                    <em>Affine plan</em> is a concept in abstract algebra / geometry, which allows us to solve this
+                    <em>Affine plane</em> is a concept in abstract algebra / geometry, which allows us to solve this
                     problem. Therefore, the name - <em>Affine Break Out Room</em>. More details
-                    in the <Link to="/theory">theory</Link> part.
+                    in the <Link to="./theory">theory</Link> part.
                 </p>
 
                 <pre>

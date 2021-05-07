@@ -9,7 +9,7 @@ function Theory() {
         <p>
           An affine plane is a two dimensional <a href="https://mathworld.wolfram.com/AffineGeometry.html">affine geometry</a> constructed
           over a <a href="https://en.wikipedia.org/wiki/Finite_field">finite field</a> (or Galois field),
-          where points and lines satisfy the those axioms: [1, 2]</p>
+          where points and lines satisfy those axioms: [1, 2]</p>
 
           <ul>
               <li>Given any two points, there is a unique line joining any two points.</li>
@@ -100,7 +100,7 @@ function Theory() {
           <p>
             Now, each point is defined as a pair <code>(x, y) &isin; <strong>F<sub>3</sub><sup>2</sup></strong></code>,
             therefore, the total number of points is <code>n<sup>2</sup></code>. Then we can draw lines given
-            by <code>y = mx + k</code>, where <code>m, k &isin; <strong>F<sub>3</sub><sup>2</sup></strong></code>.
+            by <code>y = mx + u</code>, where <code>m, k &isin; <strong>F<sub>3</sub><sup>2</sup></strong></code>.
             Each <code>m</code> give us a set of distinct lines for each <code>k</code>.
           </p>
           <table className="big">

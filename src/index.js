@@ -12,14 +12,14 @@ export const Index = () => {
         <Router>
             <h1>Affine Break Out Room</h1>
             <menu>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/story">Story</Link></li>
-                <li><Link to="/theory">Theory</Link></li>
+                <li><Link to="./">Home</Link></li>
+                <li><Link to="./story">Story</Link></li>
+                <li><Link to="./theory">Theory</Link></li>
             </menu>
             <Switch>
-                <Route path="/story" component={Story} />
-                <Route path="/theory" component={Theory} />
-                <Route path="/" component={App} />
+                <Route path="./story" component={Story} />
+                <Route path="./theory" component={Theory} />
+                <Route path="./" component={App} />
             </Switch>
             <footer>
                 &copy; Matej Kerekrety 2021
