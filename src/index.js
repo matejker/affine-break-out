@@ -17,9 +17,9 @@ export const Index = () => {
                 <li><Link to="./theory">Theory</Link></li>
             </menu>
             <Switch>
-                <Route path="./story" component={Story} />
-                <Route path="./theory" component={Theory} />
-                <Route path="./" component={App} />
+                <Route path="/story" component={Story} />
+                <Route path="/theory" component={Theory} />
+                <Route path="/" component={App} />
             </Switch>
             <footer>
                 &copy; Matej Kerekrety 2021
