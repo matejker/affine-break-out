@@ -13,8 +13,8 @@ export const Index = () => {
             <h1>Affine Break Out Room</h1>
             <menu>
                 <li><Link to="/affine-break-out/">Home</Link></li>
-                <li><Link to="/affine-break-out//story">Story</Link></li>
-                <li><Link to="/affine-break-out//theory">Theory</Link></li>
+                <li><Link to="/affine-break-out/story">Story</Link></li>
+                <li><Link to="/affine-break-out/theory">Theory</Link></li>
             </menu>
             <Switch>
                 <Route path="/affine-break-out/story" component={Story} />
