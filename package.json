@@ -15,7 +15,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage" : "https://matejker.github.io/affine-break-out",
+  "homepage" : "https://matejker.github.io/affine-break-out/",
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf ./docs && mkdir ./docs && react-scripts build && mv build/* docs",
