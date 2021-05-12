@@ -58,7 +58,7 @@ export const AffineBreakOut = (m) =>  {
         for (let t = 0; t < n; t++) {
             for (let u = 0; u < n; u++) {
                 for (let x = 0; x < n; x++) {
-                    rounds[t][u][x] = SkipReminder(x + ((FiniteFieldMultiply(t, x, m) ^ u) * n));
+                    rounds[t][u][x] = SkipReminder(x + ((FiniteFieldMultiply(t, x, n * n) ^ u) * n));
                 }
             }
         }
