@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { AffineBreakOut} from './core';
+import { AffineBreakOut } from './core';
 
 class App extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class App extends React.Component {
       this.state = {groupSize: 25};
   }
 
-  handleChange = (event) => {
+    handleChange = (event) => {
       this.setState({groupSize: event.target.value});
   };
 
@@ -17,8 +17,9 @@ class App extends React.Component {
       event.preventDefault();
   };
 
-  render() {
-    const BreakOut = AffineBreakOut((this.state.groupSize > 1) ? this.state.groupSize : 2);
+    render() {
+    const m = (this.state.groupSize > 1) ? this.state.groupSize : 2;
+    const BreakOut = AffineBreakOut(m);
 
     return (
       <div className="App">
@@ -29,13 +30,13 @@ class App extends React.Component {
           </label>
         </form>
         <div className="App-header">
-          {
-            BreakOut.map((round, i) => (
-              <p>
-                <strong>Round {i + 1}</strong>: {round.map((room) => <span>[{room.join(", ")}] </span>)}
-              </p>
-            ))
-          }
+            {
+                BreakOut.map((round, i) => (
+                    <p>
+                        <strong>Round {i + 1}</strong>: {round.map((room) => <span>[{room.join(", ")}] </span>)}
+                    </p>
+                ))
+            }
         </div>
       </div>
     )
