@@ -5,7 +5,7 @@ I looked back and realised that by using _affine planes_ it can be easily _solve
 
 <div style="text-align:center">
     <img src="./src/order5.png" />
-    Affine plane of order 5
+    <p>Affine plane of order 5
 </div>
 
 An _affine plane_ is a concept in abstract algebra / geometry, which allows us to solve this
