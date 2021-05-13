@@ -13,7 +13,7 @@ function Story() {
                 <p>
                     <em>Affine plane</em> is a concept in abstract algebra / geometry, which allows us to solve this
                     problem. Therefore, the name - <em>Affine Break Out Room</em>. More details
-                    in the <Link to="./theory">theory</Link> part.
+                    in the <Link to="/affine-break-out-room/theory">theory</Link> part.
                 </p>
 
                 <pre>
