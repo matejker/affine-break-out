@@ -1,17 +1,3 @@
-export const PRIMES = [1, 2, 3, 4, 5, 7, 8, 11];
-
-
-export const ClosestPrimeSqrt = (m) => {
-    let n = PRIMES.slice(-1)[0];
-    for (let p in PRIMES.reverse()) {
-        if (PRIMES[p] * PRIMES[p] >= m) {
-            n = PRIMES[p];
-        } else {
-            return n;
-        }
-    }
-};
-
 export const FiniteFieldMultiply = (a, b, m) => {
     let r = 11;
     let d = 2;
@@ -45,7 +31,20 @@ export const AffineBreakOut = (m) =>  {
         return (k < m) ? k : "N";
     };
 
-    const n = ClosestPrimeSqrt(m);
+    const PRIMES = [1, 2, 3, 4, 5, 7, 8, 11];
+
+    const ClosestPrimeSqrt = () => {
+        let n = PRIMES.slice(-1)[0];
+        for (let p in PRIMES.reverse()) {
+            if (PRIMES[p] * PRIMES[p] >= m) {
+                n = PRIMES[p];
+            } else {
+                return n;
+            }
+        }
+    };
+
+    const n = ClosestPrimeSqrt();
     let rounds = [n + 1];
     for (let i = 0; i < n + 1; i++) {
         rounds[i] = new Array(n);
